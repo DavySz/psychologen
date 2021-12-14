@@ -1,0 +1,197 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Convergence", serif;
+}
+
+.home,
+.empty,
+.services,
+.about,
+.products,
+.sign-up {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+}
+
+.agenda {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: left;
+  font-size: 3rem;
+}
+
+.services {
+  background-image: url("extras/img-2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.products {
+  background-image: url("extras/img-1.jpg");
+  background-position: center;
+  background-size: fill;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+.sign-up {
+  background-image: url("extras/wallpapersden.com_colorful-blue-purple-wave_5120x2880.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  object-fit: contain;
+}
+
+.link {
+  color: black;
+  font-size: 16px;
+  padding: 20px;
+}
+
+.image1 {
+  background-image: url("extras/ff22c66b5f7d9b60ec981b2f7411ed0d.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50vh;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.image2 {
+  background-image: url("extras/img_zxcvb.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 50vh;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+a {
+  text-decoration: none;
+  text-size-adjust: smaller;
+  color: rgb(26, 115, 232);
+  margin-left: 6%;
+}
+
+/* esconde as ancoras da tela */
+a.links {
+  display: none;
+}
+
+.box {
+  width: 489px;
+  height: flex;
+  margin-top: -80px;
+  padding: 6px;
+  border: #fff;
+  border-radius: 10px;
+  background-color: whitesmoke;
+  z-index: 2;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+}
+
+.box > h1 {
+  padding: 10px 0;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 15px;
+  top: 10px;
+  font-size: larger;
+}
+
+.box > h2 {
+  padding: 10px 0;
+  font-weight: 300;
+  text-align: center;
+  padding-bottom: 15px;
+  top: 10px;
+  font-size: large;
+}
+
+.box > p {
+  color: black;
+  font-size: 24px;
+  margin: 2px 2px 0px 0px;
+  padding: 0px 30px 0px 20px;
+  justify-content: center;
+}
+
+.box + .box {
+  margin-left: 5%;
+}
+
+input:not([type="checkbox"]) {
+  width: 430px;
+  margin-top: 4px;
+  margin-bottom: 6px;
+  padding: 10px;
+  border: 1px solid #b2b2b2;
+  border-radius: 20px;
+}
+
+input[type="submit"] {
+  width: 40%;
+  background: rgb(26, 115, 232);
+  color: #fff;
+  font-size: 16px;
+  border: 1px solid #fff;
+  margin-top: 15px;
+  margin-left: 27px;
+  margin-bottom: 20px;
+  text-shadow: 0 1px 1px #333;
+  border-radius: 20px;
+}
+
+.about {
+  background-image: url("extras/wallpapersden.com_colorful-blue-purple-wave_5120x2880.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+label {
+  color: #405c60;
+  position: relative;
+  float: left;
+  font-size: medium;
+}
+
+@media (max-width: 510px) {
+  * {
+    height: 50vh;
+    font-size: 0.5rem;
+  }
+
+  .box {
+    width: 100%;
+    border-radius: 0px;
+  }
+
+  .box > h1 {
+    font-size: 1.5rem;
+  }
+
+  .box > p {
+    font-size: 0.6rem;
+  }
+}
